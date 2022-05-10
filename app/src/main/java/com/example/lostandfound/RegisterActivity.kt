@@ -106,6 +106,7 @@ class RegisterActivity : AppCompatActivity() {
                     map.put("Gender",gender)
                     map.put("Profile",it.toString())
                     map.put("Login","Yes")
+                    map.put("Language","English")
                     database.child(ID).setValue(map).addOnCompleteListener {
                         if (it.isSuccessful){
                             binding.Form.isVisible = true
@@ -131,6 +132,7 @@ class RegisterActivity : AppCompatActivity() {
                     map.put("Gender",gender)
                     map.put("Profile",it.toString())
                     map.put("Login","Yes")
+                    map.put("Language","English")
                     database.child(ID).setValue(map).addOnCompleteListener {
                         if (it.isSuccessful){
                             binding.Form.isVisible = true
@@ -154,6 +156,7 @@ class RegisterActivity : AppCompatActivity() {
                     map.put("Gender",gender)
                     map.put("Profile",it.toString())
                     map.put("Login","Yes")
+                    map.put("Language","English")
                     database.child(ID).setValue(map).addOnCompleteListener {
                         if (it.isSuccessful){
                             binding.Form.isVisible = true

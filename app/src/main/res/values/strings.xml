@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Lost and Found</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="register_now">Register Now</string>
+    <string name="checking_your_credential">Checking your credential…</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="gender">Gender</string>
+    <string name="news">News</string>
+    <string name="discover">Discover</string>
+    <string name="user">User</string>
+    <string name="profile">Profile</string>
+    <string name="register_account">Register account..</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="type">
+        <item>Found</item>
+        <item>Lost</item>
+    </string-array>
+    <string name="search">Search</string>
+    <string name="name">Name</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="personal">Personal</string>
+    <string name="post">Post</string>
+    <string name="change_password">Change Password</string>
+    <string name="setting">Setting</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="history_post">History Post</string>
+    <string name="upload">Upload....</string>
+    <string name="caption">Caption</string>
+    <string name="type">Type</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="change_password_">Change Password.....</string>
+    <string name="no">NO</string>
+    <string name="yes">Yes</string>
+    <string name="delete_account_">Delete account...</string>
+    <string name="date">Date</string>
+    <string name="your_post">Your Post</string>
+    <string name="delete">Delete</string>
+    <string name="edit_post">Edit Post</string>
+    <string name="edit_post_">Edit Post...</string>
+    <string name="react">React</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+    <string name="list_posts">List Post</string>
+</resources>

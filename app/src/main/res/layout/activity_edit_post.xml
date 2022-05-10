@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EditPostActivity">
+    <!--    Top bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#23286b"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_height="80dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/BtnClose"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableLeft="@drawable/arrow_left_white_32"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:id="@+id/TextHeader"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/edit_post"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/Form"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="128dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/Photo"
+                    android:src="@drawable/photo"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Photo"
+                    android:textColor="@color/blue"
+                    android:textSize="24dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <!--  Input caption -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/caption"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/InputCaption"
+                    android:inputType="textMultiLine"
+                    android:drawableRight="@drawable/caption_64"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--  Input caption -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/type"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/InputType"
+                    android:inputType="none"
+                    android:drawableRight="@drawable/type_32"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="16dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/primary"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_height="match_parent"
+                    android:id="@+id/BtnPost"
+                    android:text="@string/edit_post"
+                    android:textSize="16dp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/arrow_right_white_24"
+                    android:drawableLeft="@drawable/tools_32"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Progress-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/SHOW_PROGRESS"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:text="@string/edit_post_"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

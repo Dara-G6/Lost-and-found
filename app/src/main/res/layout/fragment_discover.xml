@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.DiscoverFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <!--     input user name   -->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:hint="@string/search"
+            android:padding="6dp"
+            android:id="@+id/TextName"
+            android:drawableLeft="@drawable/search_24"
+            android:textColorHint="@color/blue"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/primary"
+            android:text="@string/search"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:id="@+id/BtnSearch"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListUsers"/>
+
+
+</LinearLayout>

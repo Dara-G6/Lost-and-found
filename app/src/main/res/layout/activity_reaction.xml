@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".ReactionActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableTop="@drawable/close_24"
+        android:id="@+id/BtnClose"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:elevation="12dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <!--   Profile    -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                app:cardCornerRadius="45dp"
+                android:layout_height="90dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ProfileUser"
+                    android:src="@drawable/user_32"/>
+            </androidx.cardview.widget.CardView>
+            <!-- Name Date type-->
+            <LinearLayout
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:id="@+id/TextName"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"/>
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:id="@+id/TextDate"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@id/TextType"
+                    android:text="@string/type"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="8dp"
+            android:id="@+id/TextCaption"
+            android:textColor="@color/black"
+            android:text="@string/caption"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/Photo"
+            android:src="@drawable/photo"/>
+
+        <!--     Like comment share   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_margin="4dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_60"
+                android:text="@string/react"
+                android:textSize="12dp"
+                android:drawableLeft="@drawable/like_8"
+                android:id="@+id/TextCountLike"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_60"
+                android:text="@string/comment"
+                android:textSize="12dp"
+                android:id="@+id/TextCountComment"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_60"
+                android:text="@string/share"
+                android:textSize="12dp"
+                android:id="@+id/TextCountShare"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Line-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="4dp"
+            android:background="#80000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content">
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/react"
+                android:textAllCaps="false"
+                android:id="@+id/BtnLike"
+                android:textStyle="bold"
+                android:textColor="@color/black_60"
+                android:drawableLeft="@drawable/like_16"
+                android:layout_weight="1"/>
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:text="@string/comment"
+                android:textAllCaps="false"
+                android:id="@+id/BtnComment"
+                android:textColor="@color/black_60"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/comment_16"
+                android:layout_weight="1"/>
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:textColor="@color/black_60"
+                android:layout_height="wrap_content"
+                android:text="@string/share"
+                android:textAllCaps="false"
+                android:id="@+id/BtnShare"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/share_16"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

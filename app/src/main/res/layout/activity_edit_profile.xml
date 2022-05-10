@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditProfileActivity">
+<!--    Top bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#23286b"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_height="80dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/BtnClose"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableLeft="@drawable/arrow_left_white_32"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:id="@+id/TextHeader"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/edit_profile"/>
+    </LinearLayout>
+<!--Form-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/Form"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="128dp"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="128dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/email_32"
+                    android:id="@+id/ProfileUser"/>
+            </androidx.cardview.widget.CardView>
+
+            <!--  Input Email -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/InputFullName"
+                    android:inputType="textEmailAddress"
+                    android:drawableRight="@drawable/name_32"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_profile"
+                    android:textAllCaps="false"
+                    android:id="@+id/BtnEditProfile"
+                    android:drawableRight="@drawable/arrow_right_white_24"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Progress-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/SHOW_PROGRESS"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:text="@string/edit_profile"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

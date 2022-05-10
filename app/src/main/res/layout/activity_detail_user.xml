@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailUserActivity">
+    <!--    Top bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#23286b"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_height="80dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/BtnClose"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableLeft="@drawable/arrow_left_white_32"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:id="@+id/TextHeader"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/name"/>
+    </LinearLayout>
+    <!--    Profile User-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="20dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="120dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/email_32"
+            android:id="@+id/ProfileUser"/>
+    </androidx.cardview.widget.CardView>
+    <!--name-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextName"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="@string/name"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="10dp"
+        android:background="@color/blue"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/TextList"
+        android:text="@string/list_posts"/>
+    <GridView
+        android:id="@+id/ListPost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:numColumns="2" />
+
+
+</LinearLayout>

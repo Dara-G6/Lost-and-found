@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment.ProfileFragment">
+
+    <!--    Profile User-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="120dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/email_32"
+            android:id="@+id/ProfileUser"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextName"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="@string/name"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextEmail"
+        android:textSize="22dp"
+        android:textAlignment="center"
+        android:textColor="@color/black_60"
+        android:text="@string/email"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/primary"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/BtnEditProfile"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/arrow_right_white_24"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="@string/edit_profile"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal"
+                android:textSize="20dp"
+                android:background="@color/gray"
+                />
+            <Button
+                android:id="@+id/BtnPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="20dp"
+                android:text="@string/post"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:drawableRight="@drawable/arrow_right_black_24"
+                android:drawableLeft="@drawable/messgae_24"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="20dp"
+                android:id="@+id/BtnHistory"
+                android:text="@string/history_post"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:drawableRight="@drawable/arrow_right_black_24"
+                android:drawableLeft="@drawable/history_24"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="20dp"
+                android:text="@string/change_password"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:id="@+id/BtnChangePassword"
+                android:drawableRight="@drawable/arrow_right_black_24"
+                android:drawableLeft="@drawable/password_24"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="20dp"
+                android:text="Delete Account"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:id="@+id/BtnDeleteAccount"
+                android:drawableRight="@drawable/arrow_right_black_24"
+                android:drawableLeft="@drawable/warning_24"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setting"
+                android:textSize="20dp"
+                android:background="@color/gray"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="20dp"
+                android:id="@+id/BtnSetting"
+                android:text="@string/setting"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:drawableRight="@drawable/arrow_right_black_24"
+                android:drawableLeft="@drawable/settings_24"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="20dp"
+                android:text="Logout"
+                android:id="@+id/BtnLogout"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:drawableRight="@drawable/arrow_right_black_24"
+                android:drawableLeft="@drawable/logout_24"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

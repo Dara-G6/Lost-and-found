@@ -37,7 +37,8 @@ class DetailUserActivity : AppCompatActivity() {
         val ID = intent.getStringExtra("ID")
         val name = intent.getStringExtra("Name")
         val profile = intent.getStringExtra("Profile")
-
+        val email = intent.getStringExtra("Email")
+        binding.TextEmail.text = email
         binding.TextName.text = name
         binding.TextHeader.text = "User : $name"
         Picasso.get().load(profile).into(binding.ProfileUser)

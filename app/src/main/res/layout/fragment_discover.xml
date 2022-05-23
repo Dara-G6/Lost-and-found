@@ -15,7 +15,7 @@
         <EditText
             android:layout_width="0dp"
             android:layout_weight="8"
-            android:hint="@string/search"
+            android:hint="@string/user_name"
             android:padding="6dp"
             android:fontFamily="@font/odormeanchey"
             android:id="@+id/TextName"

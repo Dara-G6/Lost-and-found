@@ -52,7 +52,7 @@
     <string name="react">React</string>
     <string name="comment">Comment</string>
     <string name="share">Share</string>
-    <string name="list_posts">List Post</string>
+    <string name="list_posts">ការប្រកាស</string>
     <string name="language">ភាសា</string>
     <string name="save">រក្សាទុក</string>
     <string name="english">ភាសាអង់គ្លេស</string>
@@ -60,4 +60,5 @@
     <string name="logout">ចាកចេញ</string>
     <string name="photo">រូបភាព</string>
     <string name="new_confirm_password">បញ្ជាក់ពាក្យសម្ងាត់ថ្មី</string>
+    <string name="user_name">ឈ្មោះ គណនី</string>
 </resources>

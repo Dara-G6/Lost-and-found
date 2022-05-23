@@ -36,6 +36,7 @@ class UserAdapter(context: Context, resource: Int, list: List<User>) :
             val i = Intent(context,DetailUserActivity::class.java)
             i.putExtra("Name",l[position].Name)
             i.putExtra("ID",l[position].ID)
+            i.putExtra("Email",l[position].Email)
             i.putExtra("Profile",l[position].Profile)
             c.startActivity(i)
         }

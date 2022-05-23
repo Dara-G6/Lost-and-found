@@ -60,4 +60,5 @@
     <string name="logout">Logout</string>
     <string name="photo">Photo</string>
     <string name="new_confirm_password">New Confirm Password</string>
+    <string name="user_name">User Name</string>
 </resources>

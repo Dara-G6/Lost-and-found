@@ -52,12 +52,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/TextName"
-        android:textSize="28dp"
+        android:textSize="26dp"
         android:fontFamily="@font/odormeanchey"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:text="@string/name"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextEmail"
+        android:textSize="26dp"
+        android:fontFamily="@font/odormeanchey"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black_60"
+        android:text="@string/email"
         />
     <View
         android:layout_width="match_parent"

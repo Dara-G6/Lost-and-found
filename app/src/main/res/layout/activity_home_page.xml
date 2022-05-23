@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:text="@string/news"
+        android:fontFamily="@font/odormeanchey"
         android:textSize="30dp"
         android:id="@+id/TextHeader"
         android:textColor="@color/primary"

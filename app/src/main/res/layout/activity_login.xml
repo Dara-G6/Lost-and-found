@@ -16,6 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
+        android:fontFamily="@font/odormeanchey"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:textColor="@color/blue"
@@ -36,6 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
+            android:fontFamily="@font/odormeanchey"
             android:layout_marginTop="10dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -53,6 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
+            android:fontFamily="@font/odormeanchey"
             android:layout_marginTop="10dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
@@ -71,6 +74,7 @@
             android:layout_marginTop="6dp"
             android:textColor="@color/primary"
             android:textSize="16dp"
+            android:fontFamily="@font/odormeanchey"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:textStyle="bold"
@@ -88,6 +92,7 @@
                 android:textSize="16dp"
                 android:textAllCaps="false"
                 android:textStyle="bold"
+                android:fontFamily="@font/odormeanchey"
                 android:drawableRight="@drawable/arrow_right_white_24"
                 android:layout_height="match_parent"
                 style="@style/Widget.AppCompat.Button.Borderless"
@@ -104,6 +109,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="@font/odormeanchey"
                 android:textAlignment="textEnd"
                 android:textColor="@color/black"
                 android:text="@string/don_t_have_account"/>
@@ -113,6 +119,7 @@
                 android:layout_weight="1"
                 android:textStyle="bold"
                 android:textSize="16dp"
+                android:fontFamily="@font/odormeanchey"
                 android:id="@+id/BtnRegister"
                 android:textColor="@color/primary"
                 android:layout_marginLeft="6dp"

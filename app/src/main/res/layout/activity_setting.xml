@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <!--    Top bar    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#23286b"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_height="80dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/BtnClose"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:drawableRight="@drawable/arrow_left_white_32"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:fontFamily="@font/odormeanchey"
+                android:id="@+id/TextHeader"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/setting"/>
+        </LinearLayout>
+
+        <!--    Form-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/Form"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_margin="12dp"
+                android:padding="12dp"
+                android:fontFamily="@font/odormeanchey"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/language_32"
+                android:text="@string/language"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:id="@+id/Language"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/english"
+                            android:id="@+id/English"
+                            android:paddingLeft="6dp"
+                            android:fontFamily="@font/odormeanchey"
+                            android:paddingRight="6dp"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            />
+
+                        <RadioButton
+                            android:fontFamily="@font/odormeanchey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/khmer"
+                            android:id="@+id/Khmer"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:layout_height="100dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/united_kingdom"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/cambodia"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--            Button-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/primary"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:fontFamily="@font/odormeanchey"
+                    android:layout_width="match_parent"
+                    android:id="@+id/BtnSetting"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_height="match_parent"
+                    android:text="@string/save"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

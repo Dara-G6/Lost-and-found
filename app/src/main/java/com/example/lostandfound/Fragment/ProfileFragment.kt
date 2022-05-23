@@ -63,6 +63,11 @@ class ProfileFragment : Fragment() {
             startActivity(i)
         }
 
+        binding.BtnSetting.setOnClickListener {
+            val i = Intent(activity,SettingActivity::class.java)
+            startActivity(i)
+        }
+
         setProfile()
         return binding.root
     }

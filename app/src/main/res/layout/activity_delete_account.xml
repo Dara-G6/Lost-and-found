@@ -27,6 +27,7 @@
             android:textStyle="bold"
             android:textSize="28dp"
             android:id="@+id/TextHeader"
+            android:fontFamily="@font/odormeanchey"
             android:textColor="@color/white"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
@@ -52,6 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
+                android:fontFamily="@font/odormeanchey"
                 android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -68,6 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
+                android:fontFamily="@font/odormeanchey"
                 android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -88,6 +91,7 @@
                 android:layout_height="wrap_content">
 
                 <Button
+                    android:fontFamily="@font/odormeanchey"
                     android:layout_width="match_parent"
                     android:drawableLeft="@drawable/warning_24"
                     android:layout_height="wrap_content"

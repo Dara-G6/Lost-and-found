@@ -16,6 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register"
+        android:fontFamily="@font/odormeanchey"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:textColor="@color/blue"
@@ -37,6 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/full_name"
+                android:fontFamily="@font/odormeanchey"
                 android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -54,6 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
+                android:fontFamily="@font/odormeanchey"
                 android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -71,6 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
+                android:fontFamily="@font/odormeanchey"
                 android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                 <com.google.android.material.textfield.TextInputEditText
@@ -87,6 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/confirm_password"
+                android:fontFamily="@font/odormeanchey"
                 android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
                 <com.google.android.material.textfield.TextInputEditText
@@ -102,6 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/gender"
+                android:fontFamily="@font/odormeanchey"
                 android:layout_marginTop="10dp"
                 android:drawableEnd="@drawable/gender_32"
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
@@ -123,6 +129,7 @@
                 app:cardBackgroundColor="@color/primary"
                 android:layout_height="wrap_content">
                 <Button
+                    android:fontFamily="@font/odormeanchey"
                     android:layout_width="match_parent"
                     android:id="@+id/BtnRegister"
                     android:layout_height="match_parent"

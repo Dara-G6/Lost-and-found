@@ -27,6 +27,7 @@
             android:textStyle="bold"
             android:textSize="24dp"
             android:id="@+id/TextHeader"
+            android:fontFamily="@font/odormeanchey"
             android:textColor="@color/white"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
@@ -52,6 +53,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/TextName"
         android:textSize="28dp"
+        android:fontFamily="@font/odormeanchey"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -71,6 +73,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:id="@+id/TextList"
+        android:fontFamily="@font/odormeanchey"
         android:text="@string/list_posts"/>
     <GridView
         android:id="@+id/ListPost"

@@ -26,6 +26,7 @@
             android:layout_weight="4"
             android:textStyle="bold"
             android:textSize="28dp"
+            android:fontFamily="@font/odormeanchey"
             android:id="@+id/TextHeader"
             android:textColor="@color/white"
             android:layout_height="match_parent"
@@ -60,6 +61,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="Photo"
+                    android:fontFamily="@font/odormeanchey"
                     android:textColor="@color/blue"
                     android:textSize="24dp"
                     android:gravity="center_vertical"
@@ -70,6 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/caption"
+                android:fontFamily="@font/odormeanchey"
                 android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -87,6 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/type"
+                android:fontFamily="@font/odormeanchey"
                 android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
 
@@ -107,6 +111,7 @@
                 android:layout_height="wrap_content">
 
                 <Button
+                    android:fontFamily="@font/odormeanchey"
                     android:layout_width="match_parent"
                     style="@style/Widget.AppCompat.Button.Borderless"
                     android:layout_height="match_parent"

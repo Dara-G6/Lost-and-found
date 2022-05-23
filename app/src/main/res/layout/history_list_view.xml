@@ -30,6 +30,7 @@
                     android:padding="10dp"
                     android:layout_weight="1">
                     <TextView
+                        android:fontFamily="@font/odormeanchey"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black_60"
@@ -38,6 +39,7 @@
                         android:layout_marginTop="4dp"
                         android:id="@+id/TextDate"/>
                     <TextView
+                        android:fontFamily="@font/odormeanchey"
                         android:layout_marginTop="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -46,6 +48,7 @@
                         android:text="@string/type"
                         android:id="@+id/TextType"/>
                     <TextView
+                        android:fontFamily="@font/odormeanchey"
                         android:layout_marginTop="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -55,6 +58,7 @@
                         android:id="@+id/TextLike"/>
 
                     <TextView
+                        android:fontFamily="@font/odormeanchey"
                         android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -80,6 +84,7 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:text="@string/delete"
             android:textSize="16dp"
+            android:fontFamily="@font/odormeanchey"
             android:textStyle="bold"
             android:drawableLeft="@drawable/delete_32"
             android:textColor="@color/red"
@@ -94,6 +99,7 @@
             android:textSize="16dp"
             android:textStyle="bold"
             android:id="@+id/BtnEdit"
+            android:fontFamily="@font/odormeanchey"
             android:drawableRight="@drawable/edit_32"
             android:textColor="@color/primary"
             android:layout_height="wrap_content"/>

@@ -14,7 +14,7 @@
         android:textStyle="bold"
         android:text="@string/news"
         android:fontFamily="@font/odormeanchey"
-        android:textSize="30dp"
+        android:textSize="24dp"
         android:id="@+id/TextHeader"
         android:textColor="@color/primary"
         />
@@ -31,6 +31,7 @@
         app:menu="@menu/menu"
         android:layout_weight="1"
         android:id="@+id/Menu"
+        app:itemTextAppearanceActive="@style/menu"
         android:layout_height="0dp"/>
 
 

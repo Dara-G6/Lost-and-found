@@ -35,7 +35,7 @@
     <string name="setting">Setting</string>
     <string name="delete_account">Delete Account</string>
     <string name="history_post">History Post</string>
-    <string name="upload">Upload....</string>
+    <string name="upload">Upload</string>
     <string name="caption">Caption</string>
     <string name="type">Type</string>
     <string name="current_password">Current Password</string>
@@ -57,4 +57,7 @@
     <string name="save">Save</string>
     <string name="english">English</string>
     <string name="khmer">Khmer</string>
+    <string name="logout">Logout</string>
+    <string name="photo">Photo</string>
+    <string name="new_confirm_password">New Confirm Password</string>
 </resources>

@@ -66,7 +66,7 @@ class DeleteAccountActivity : AppCompatActivity() {
         dialog.window!!.attributes=ip
 
         val textHeader = dialog.findViewById<TextView>(R.id.TextHeader)
-        textHeader.text = "Do you want to delete your account?"
+        textHeader.text = getString(R.string.ask_delete_account)
 
         val btnYes = dialog.findViewById<Button>(R.id.BtnYes)
         btnYes.setOnClickListener {

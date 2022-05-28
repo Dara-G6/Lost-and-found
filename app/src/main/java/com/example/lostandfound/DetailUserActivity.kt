@@ -40,7 +40,7 @@ class DetailUserActivity : AppCompatActivity() {
         val email = intent.getStringExtra("Email")
         binding.TextEmail.text = email
         binding.TextName.text = name
-        binding.TextHeader.text = "User : $name"
+        binding.TextHeader.text = "${getString(R.string.user)} : $name"
         Picasso.get().load(profile).into(binding.ProfileUser)
         val list = ArrayList<Post>()
 

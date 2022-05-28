@@ -97,7 +97,7 @@ class EditPostActivity : AppCompatActivity() {
         dialog.window!!.attributes=ip
 
         val textHeader = dialog.findViewById<TextView>(R.id.TextHeader)
-        textHeader.text = "Do you want to update this post?"
+        textHeader.text = getString(R.string.ask_edit_post)
 
         val btnYes = dialog.findViewById<Button>(R.id.BtnYes)
         btnYes.setOnClickListener {

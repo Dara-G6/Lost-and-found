@@ -31,7 +31,7 @@
     <string name="edit_profile">កែប្រែព័ត៍មាន</string>
     <string name="personal">ផ្ទាល់ខ្លួន</string>
     <string name="post">ប្រកាស</string>
-    <string name="change_password">ប្តូពាក្យសម្ងាត់</string>
+    <string name="change_password">ប្តូរពាក្យសម្ងាត់</string>
     <string name="setting">ការកំណត់</string>
     <string name="delete_account">លុបគណនី</string>
     <string name="history_post">ប្រវត្តនៃ ការប្រកាស</string>
@@ -61,4 +61,10 @@
     <string name="photo">រូបភាព</string>
     <string name="new_confirm_password">បញ្ជាក់ពាក្យសម្ងាត់ថ្មី</string>
     <string name="user_name">ឈ្មោះ គណនី</string>
+    <string name="users">អ្នកប្រើប្រាស់</string>
+    <string name="ask_update_profile">តើអ្នកចង់កែប្រែព័ត៍មានមែនទេ?</string>
+    <string name="ask_update_password">តើអ្នកចង់ប្តូរពាក្យសំងាត់មែនទេ?</string>
+    <string name="ask_delete_account">តើអ្នកចង់លុបគណនីមែនទេ?</string>
+    <string name="ask_delete_post">តើអ្នកចង់លុបការប្រកាសមួយនេះមែនទេ?</string>
+    <string name="ask_edit_post">តើអ្នកចង់កែប្រែការប្រកាសមែនទេ?</string>
 </resources>

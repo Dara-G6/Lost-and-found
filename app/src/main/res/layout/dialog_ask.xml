@@ -8,6 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
+        android:fontFamily="@font/odormeanchey"
         android:textSize="28dp"
         android:textColor="@color/white"
         android:textAlignment="center"
@@ -32,6 +33,7 @@
         <Button
             android:layout_width="0dp"
             android:text="@string/no"
+            android:fontFamily="@font/odormeanchey"
             android:textColor="@color/blue"
             android:textStyle="bold"
             android:textSize="18dp"
@@ -43,6 +45,7 @@
         <Button
             android:layout_width="0dp"
             android:text="@string/yes"
+            android:fontFamily="@font/odormeanchey"
             android:textColor="@color/primary"
             android:textStyle="bold"
             android:textSize="18dp"

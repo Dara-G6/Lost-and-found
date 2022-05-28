@@ -83,7 +83,7 @@ class HistoryAdapter(context: Context, resource: Int,list:ArrayList<Post>,activi
         dialog.window!!.attributes=ip
 
         val textHeader = dialog.findViewById<TextView>(R.id.TextHeader)
-        textHeader.text = "Do you want to delete this post?"
+        textHeader.text = context.getString(R.string.ask_delete_post)
 
         val btnYes = dialog.findViewById<Button>(R.id.BtnYes)
         btnYes.setOnClickListener {

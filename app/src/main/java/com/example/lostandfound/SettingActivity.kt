@@ -41,8 +41,11 @@ class SettingActivity : AppCompatActivity() {
 
     //set setting
     private fun setSetting(){
-        database.child(auth.uid.toString()).child("Language").setValue(language)
-        startActivity( Intent(this,StartActivity::class.java))
+        if (language.isNotEmpty()){
+            database.child(auth.uid.toString()).child("Language").setValue(language)
+            startActivity( Intent(this,StartActivity::class.java))
+        }
+
     }
 
     private fun getLang(){

@@ -1,13 +1,13 @@
 package com.example.lostandfound
 
 import android.app.Dialog
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import com.example.lostandfound.Customize.hideKeyboard
 import com.example.lostandfound.databinding.ActivityChangePasswordBinding
@@ -56,7 +56,7 @@ class ChangePasswordActivity : AppCompatActivity() {
         dialog.window!!.attributes=ip
 
         val textHeader = dialog.findViewById<TextView>(R.id.TextHeader)
-        textHeader.text = "Do you want to update your password?"
+        textHeader.text = getString(R.string.ask_update_password)
 
         val btnYes = dialog.findViewById<Button>(R.id.BtnYes)
         btnYes.setOnClickListener {

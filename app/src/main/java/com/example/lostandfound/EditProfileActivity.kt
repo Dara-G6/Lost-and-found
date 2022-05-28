@@ -109,7 +109,7 @@ class EditProfileActivity : AppCompatActivity() {
         dialog.window!!.attributes=ip
 
         val textHeader = dialog.findViewById<TextView>(R.id.TextHeader)
-        textHeader.text = "Do you want to update your profile?"
+        textHeader.text = getString(R.string.ask_update_profile)
 
         val btnYes = dialog.findViewById<Button>(R.id.BtnYes)
         btnYes.setOnClickListener {

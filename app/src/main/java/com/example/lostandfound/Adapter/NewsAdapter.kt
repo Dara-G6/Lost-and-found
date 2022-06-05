@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import com.example.lostandfound.DataClass.Post
+import com.example.lostandfound.DetailUserActivity
 import com.example.lostandfound.ReactionActivity
 import com.example.lostandfound.databinding.NewsListViewBinding
 import com.squareup.picasso.Picasso
@@ -47,6 +48,16 @@ class NewsAdapter(context: Context, resource: Int, list: MutableList<Post>) :
             i.putExtra("IDPost",l[position].IDPost)
             i.putExtra("Like",l[position].Like.toInt().toString())
             context.startActivity(i)
+        }
+
+        binding.ProfileUser.setOnClickListener {
+            val i = Intent(context,DetailUserActivity::class.java)
+            i.putExtra("Name",l[position].Name)
+            i.putExtra("ID",l[position].UserID)
+            i.putExtra("Email",l[position].Email)
+            i.putExtra("Profile",l[position].Profile)
+            c.startActivity(i)
+
         }
 
         return binding.root

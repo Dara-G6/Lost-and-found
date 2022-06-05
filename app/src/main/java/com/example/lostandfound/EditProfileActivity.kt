@@ -154,10 +154,10 @@ class EditProfileActivity : AppCompatActivity() {
                 binding.SHOWPROGRESS.isVisible=false
                 Toast.makeText(this,"Edit profile success",Toast.LENGTH_LONG).show()
 
-                database.database.getReference("Users").child(auth.uid.toString()).get().addOnSuccessListener {
-                    if (it.exists()){
-                        val name = it.child("Name").value.toString()
-                        val photo = it.child("Profile").value.toString()
+                database.database.getReference("Users").child(auth.uid.toString()).get().addOnSuccessListener {task->
+                    if (task.exists()){
+                        val name = task.child("Name").value.toString()
+                        val photo = task.child("Profile").value.toString()
                         updatePost(name,photo,auth.uid.toString())
                     }
                 }
@@ -181,10 +181,10 @@ class EditProfileActivity : AppCompatActivity() {
                     Toast.makeText(this,"Edit profile success",Toast.LENGTH_LONG).show()
                     database.child(auth.uid.toString()).child("Name").setValue(name)
                     database.child(auth.uid.toString()).child("Profile").setValue(it.toString())
-                    database.database.getReference("Users").child(auth.uid.toString()).get().addOnSuccessListener {
-                        if (it.exists()){
-                            val name = it.child("Name").value.toString()
-                            val photo = it.child("Profile").value.toString()
+                    database.database.getReference("Users").child(auth.uid.toString()).get().addOnSuccessListener { task ->
+                        if (task.exists()){
+                            val name = task.child("Name").value.toString()
+                            val photo = task.child("Profile").value.toString()
                             updatePost(name,photo,auth.uid.toString())
                         }
                     }

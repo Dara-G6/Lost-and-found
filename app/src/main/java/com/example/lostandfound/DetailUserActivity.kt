@@ -42,15 +42,18 @@ class DetailUserActivity : AppCompatActivity() {
         binding.TextName.text = name
         binding.TextHeader.text = "${getString(R.string.user)} : $name"
         Picasso.get().load(profile).into(binding.ProfileUser)
-        val list = ArrayList<Post>()
 
+
+       setListPost(ID!!,name!!,email!!,profile!!)
+
+    }
+
+    private fun setListPost(ID:String,name:String,email:String,profile:String){
+        val list = ArrayList<Post>()
         database.orderByChild("Date").get().addOnSuccessListener {
             if (it.exists()){
                 for (ds in it.children){
-                    val name   = ds.child("Name").value.toString()
-                    val email  = ds.child("Email").value.toString()
                     val userID = ds.child("UserID").value.toString()
-                    val profile = ds.child("Profile").value.toString()
                     val idPost =ds.child("IDPost").value.toString()
                     val photo = ds.child("Photo").value.toString()
                     val date  = ds.child("Date").value.toString()
@@ -79,6 +82,5 @@ class DetailUserActivity : AppCompatActivity() {
                 binding.ListPost.adapter = adapter
             }
         }
-
     }
 }

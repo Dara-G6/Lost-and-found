@@ -159,11 +159,10 @@ class PostActivity(
     @RequiresApi(Build.VERSION_CODES.O)
     private fun withPhoto(caption: String, type: String, path:Uri){
         //generate ID and DatePost
-        val idPost = Random.nextLong(1000000000)*9 - Random.nextInt(1000000)
+        val idPost = getID(32)
+        val date = getDate()
 
-        val current = LocalDateTime.now()
-        val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm: a")
-        val date = current.format(formatter)
+
         binding.Form.isVisible = false
         binding.SHOWPROGRESS.isVisible=true
         storage.child(idPost.toString()).putFile(path).addOnCompleteListener {
@@ -204,6 +203,32 @@ class PostActivity(
                 Toast.makeText(this,"${it.exception}",Toast.LENGTH_LONG).show()
             }
         }
+    }
+
+
+    // generate id
+    private fun getID(size:Int):String{
+        val alphabet = "0123456789" +
+                       "abcdefghijklmnopqrstuvwxyz"+"abcdefghijklmnopqrstuvwxyz".toUpperCase()
+
+        var id = ""
+        for (i in 0..size){
+            val r =Random.nextInt(alphabet.length)
+            id += alphabet[i]
+        }
+        return  id
+    }
+
+    private fun getDate():String {
+        val current = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            LocalDateTime.now()
+        } else {
+            TODO("VERSION.SDK_INT < O")
+        }
+        val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm: a")
+        val date = current.format(formatter)
+
+        return date
     }
 
 }

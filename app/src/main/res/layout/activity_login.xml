@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:id="@+id/InputEmail"
                 android:inputType="textEmailAddress"
-                android:drawableRight="@drawable/email_32"
+                android:drawableStart="@drawable/email_32"
                 android:layout_height="wrap_content"
                 />
         </com.google.android.material.textfield.TextInputLayout>
@@ -57,10 +57,11 @@
             android:hint="@string/password"
             android:fontFamily="@font/odormeanchey"
             android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:drawableEnd="@drawable/password_32"
+                android:drawableStart="@drawable/password_32"
                 android:id="@+id/InputPassword"
                 android:inputType="textPassword"
                 android:layout_height="wrap_content"

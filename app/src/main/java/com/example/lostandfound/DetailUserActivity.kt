@@ -77,6 +77,7 @@ class DetailUserActivity : AppCompatActivity() {
                         )
                     }
                 }
+
                 list.reverse()
                 val adapter = PostListAdapter(this,R.layout.post_list_view,list)
                 binding.ListPost.adapter = adapter

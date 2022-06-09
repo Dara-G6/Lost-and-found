@@ -45,13 +45,12 @@ class DiscoverFragment() : Fragment() {
             activity?.hideKeyboard(binding.root)
         }
 
-        countUsers()
+
         return binding.root
     }
 
     override fun onResume() {
         super.onResume()
-        countUsers()
         binding.TextName.setText("")
     }
 
@@ -94,13 +93,7 @@ class DiscoverFragment() : Fragment() {
         }
     }
 
-    private fun countUsers(){
-        database.get().addOnSuccessListener {
-            if (it.exists()){
-                binding.TextCountUsers.text = "${getString(R.string.users)} : ${it.childrenCount}"
-            }
-        }
-    }
+
 
 
 }

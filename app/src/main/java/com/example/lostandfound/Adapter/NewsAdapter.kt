@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import com.example.lostandfound.DataClass.Post
 import com.example.lostandfound.DetailUserActivity
+import com.example.lostandfound.R
 import com.example.lostandfound.ReactionActivity
 import com.example.lostandfound.databinding.NewsListViewBinding
 import com.squareup.picasso.Picasso
@@ -57,6 +58,15 @@ class NewsAdapter(context: Context, resource: Int, list: MutableList<Post>) :
             i.putExtra("Profile",l[position].Profile)
             c.startActivity(i)
 
+        }
+
+        if (l[position].Type[0] == 'L')
+        {
+            binding.TextType.setTextColor(c.getColor(R.color.red))
+        }
+        else
+        {
+            binding.TextType.setTextColor(c.getColor(R.color.teal_700))
         }
 
         return binding.root

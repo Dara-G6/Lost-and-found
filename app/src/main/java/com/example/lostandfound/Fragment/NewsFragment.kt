@@ -33,11 +33,7 @@ class NewsFragment(): Fragment() {
             setList()
         }
 
-        binding.RefreshNew.setColorSchemeResources(
-            R.color.blue,
-            R.color.gray,
-            R.color.primary
-        )
+
 
 
 
@@ -46,10 +42,7 @@ class NewsFragment(): Fragment() {
 
     }
 
-    override fun onResume() {
-        super.onResume()
-        setList()
-    }
+
 
 
 

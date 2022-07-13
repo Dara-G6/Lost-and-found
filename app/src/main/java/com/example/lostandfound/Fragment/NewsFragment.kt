@@ -33,6 +33,12 @@ class NewsFragment(): Fragment() {
             setList()
         }
 
+        binding.RefreshNew.setColorSchemeResources(
+            R.color.blue,
+            R.color.gray,
+            R.color.primary
+        )
+
 
 
         setList()

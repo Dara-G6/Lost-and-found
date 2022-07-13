@@ -27,7 +27,6 @@ class NewsAdapter(context: Context, resource: Int, list: MutableList<Post>) :
 
 
 
-
         //set name date type caption like and photo
         binding.TextCountLike.text = l[position].Like.toString()
         binding.TextName.text = l[position].Name

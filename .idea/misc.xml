@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LostandFound/app/src/main/res/drawable/vd_vector.xml" value="0.1" />
         <entry key="..\:/LostandFound/app/src/main/res/layout/activity_change_password.xml" value="0.1796875" />
         <entry key="..\:/LostandFound/app/src/main/res/layout/activity_delete_account.xml" value="0.1796875" />
         <entry key="..\:/LostandFound/app/src/main/res/layout/activity_detail_user.xml" value="0.1796875" />
@@ -20,7 +21,7 @@
         <entry key="..\:/LostandFound/app/src/main/res/layout/fragment_discories.xml" value="0.1796875" />
         <entry key="..\:/LostandFound/app/src/main/res/layout/fragment_discover.xml" value="0.16666666666666666" />
         <entry key="..\:/LostandFound/app/src/main/res/layout/fragment_discoveries.xml" value="0.151268115942029" />
-        <entry key="..\:/LostandFound/app/src/main/res/layout/fragment_news.xml" value="0.1796875" />
+        <entry key="..\:/LostandFound/app/src/main/res/layout/fragment_news.xml" value="0.1" />
         <entry key="..\:/LostandFound/app/src/main/res/layout/fragment_profile.xml" value="0.1796875" />
         <entry key="..\:/LostandFound/app/src/main/res/layout/history_list_view.xml" value="0.1796875" />
         <entry key="..\:/LostandFound/app/src/main/res/layout/history_list_views.xml" value="0.17222222222222222" />

@@ -214,7 +214,7 @@ class PostActivity(
         var id = ""
         for (i in 0..size){
             val r =Random.nextInt(alphabet.length)
-            id += alphabet[i]
+            id += alphabet[r]
         }
         return  id
     }
